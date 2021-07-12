@@ -6,8 +6,13 @@
 
 From Javascript:
     windows.external.invoke( cStr )
+
 Get it from Harbour
-    ack functhe hbwui_Callback( cStr ) and return 
+    hbwui_Callback( cStr )
+    
+    ....
+
+    return "Alert('hello from harbour')  //and return running Javascript code.
     
 ## Windows 
 
