@@ -1,6 +1,8 @@
 # hbwui WebView2/Cocoa/GTK Harbour Web UI
+### Harbour <-> Javascript
 
     hbwui_Init( cUrl, cTitle, nWidth, nHeight, lFullscreen, lResizable, lMaximized, lDebug )
+
     
 ## Windows 
 
