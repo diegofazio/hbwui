@@ -4,7 +4,7 @@
     
 ## Windows 
 
-Make sure you have the new Edge installed.
+ake sure you have the new Microsoft Edge (Chromium) installed.
 
 ## Linux
 
