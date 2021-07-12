@@ -45,4 +45,4 @@ FUNCTION hbwui_Callback( cStr )
          exit         
    end
  
-RETURN "alert('" + cRet + "')"
+RETURN "alert('" + cRet + "')"  //this is javascript code
