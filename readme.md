@@ -31,3 +31,6 @@ sudo apt-get install libgtk-3-dev libwebkit2gtk-4.0-37 libwebkit2gtk-4.0-dev
 ## MacOS
 
 Webview depends on the Cocoa and Webkit frameworks.
+
+# http://www.hbtron.com
+<img src="http://www.hbtron.com/hwtools512.png" width="250" title="hw_tools">
