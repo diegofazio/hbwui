@@ -1,0 +1,8 @@
+#include <windows.h>
+	
+//
+// Icon resources
+//
+LANGUAGE 0, SUBLANG_NEUTRAL
+2                ICON           "sample.ico"
+

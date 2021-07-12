@@ -1,0 +1,6 @@
+{msvc64}-l../lib/win64/hbwui
+{msvc}-l../lib/win32/hbwui
+-gui
+-gtnul
+..\resource\sample.rc
+-icon=..\resource\sample.ico
