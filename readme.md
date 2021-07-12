@@ -14,7 +14,7 @@ Get it from Harbour
     
     ....
 
-    return "Alert('hello from harbour')  //and return running Javascript code.
+    return "alert('hello from harbour')  //and return running Javascript code.
     
 ## Windows 
 
