@@ -5,9 +5,11 @@
 ### Harbour <-> Javascript
 
 From Javascript:
+
     windows.external.invoke( cStr )
 
 Get it from Harbour
+
     hbwui_Callback( cStr )
     
     ....
