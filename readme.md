@@ -2,7 +2,7 @@
 
     hbwui_Init( cUrl, cTitle, nWidth, nHeight, lFullscreen, lResizable, lMaximized, lDebug )
 
-### Harbour <-> Javascript
+### Harbour <-> Javascript( See example callback.prg )
 
 From Javascript:
 
@@ -10,7 +10,7 @@ From Javascript:
 
 Get it from Harbour
 
-    hbwui_Callback( cStr )
+    function hbwui_Callback( cStr )
     
     ....
 
