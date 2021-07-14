@@ -37,12 +37,12 @@ FUNCTION hbwui_Callback( cStr )
    local hStr := { => }, task := '', cRet 
    hb_jsonDecode( cStr, @hStr )
 	switch hStr['task']
-      case 'task1'
-         cRet := 'You run task 1, data value: ' + hStr['data']
-         exit
-      case 'task2'         
-         cRet := 'You run task 2, data value: ' + hStr['data']
-         exit         
+   case 'task1'
+      cRet := 'You run task 1, data value: ' + hStr['data']
+      exit
+   case 'task2'         
+      cRet := 'You run task 2, data value: ' + hStr['data']
+      exit         
    end
  
 RETURN "alert('" + cRet + "')"  //this is javascript code
