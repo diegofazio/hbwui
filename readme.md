@@ -1,6 +1,6 @@
 # hbwui WebView2/Cocoa/GTK Harbour Web UI
 #
-# Your multiplatform Harbour compiler GUI programs made in html/ccs and just a bit of js
+# Multiplatform Harbour GUI programs made in html/ccs and just a bit of js
 #
 
     hbwui_Init( cUrl, cTitle, nWidth, nHeight, lFullscreen, lResizable, lMaximized, lDebug )
