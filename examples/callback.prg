@@ -54,5 +54,7 @@ FUNCTION hbwui_Callback( cStr )
       cRet := 'You run task 2, data value: ' + hStr['data']
       exit         
    end
+
+   hbwui_RunJs( 'alert( "' + cRet + '" )'  ) //this is javascript code - Case sensitive!!!!
  
-RETURN "alert('" + cRet + "')"  //this is javascript code
+RETURN nil  //this is javascript code
