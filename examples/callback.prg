@@ -4,7 +4,14 @@
 ** Developed by Diego Fazio(2021)
 */
 
+/*
+ Calls a harbour function from html/js 
+ Syntax: window.external.invoke(JSON.stringify({ task: "function_to_execute", data: "js_code_from_harbour" }))
+ Note: Harbour must ALLWAYS return JS valid code
+*/
+
 FUNCTION Main()
+   // Creates html window
 
    cHtml := 'data:text/html,'
    cHtml += '<!DOCTYPE html>'
@@ -32,7 +39,10 @@ FUNCTION Main()
 
 RETURN
 
+//---------------------------------------------------------------------------
+
 FUNCTION hbwui_Callback( cStr )
+   // Executes commands from html window
 
    local hStr := { => }, task := '', cRet 
    hb_jsonDecode( cStr, @hStr )
