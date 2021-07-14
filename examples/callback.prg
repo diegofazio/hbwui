@@ -5,7 +5,7 @@
 **  Syntax: window.external.invoke(JSON.stringify({ task: "function_to_execute", data: "js_code_from_harbour" }))
 **  Note: Harbour must ALLWAYS return JS valid code
 **  
-** Developed by Diego Fazio(2021)
+**  Developed by Diego Fazio(2021)
 */
 
 FUNCTION Main()

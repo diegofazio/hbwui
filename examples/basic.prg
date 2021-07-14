@@ -1,12 +1,10 @@
 /*
 **  basic.prg -- hbwui WebView2/Cocoa/GTK Harbour Web UI
 **
-** Developed by Diego Fazio(2021)
-*/
-
-/*
- From a harbour program, it opens a new window showing some url
- Syntax: hbwui_Init( cUrl, cTitle, nWidth, nHeight, lFullscreen, lResizable, lMaximized, lDebug )
+**  From a harbour program, it opens a new window showing some url
+**  Syntax: hbwui_Init( cUrl, cTitle, nWidth, nHeight, lFullscreen, lResizable, lMaximized, lDebug )
+**
+**  Developed by Diego Fazio(2021)
 */
 
 FUNCTION Main()
