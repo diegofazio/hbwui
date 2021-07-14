@@ -1,13 +1,11 @@
 /*
 **  callback.prg -- hbwui WebView2/Cocoa/GTK Harbour Web UI
 **
+**  Calls a harbour function from html/js 
+**  Syntax: window.external.invoke(JSON.stringify({ task: "function_to_execute", data: "js_code_from_harbour" }))
+**  Note: Harbour must ALLWAYS return JS valid code
+**  
 ** Developed by Diego Fazio(2021)
-*/
-
-/*
- Calls a harbour function from html/js 
- Syntax: window.external.invoke(JSON.stringify({ task: "function_to_execute", data: "js_code_from_harbour" }))
- Note: Harbour must ALLWAYS return JS valid code
 */
 
 FUNCTION Main()
