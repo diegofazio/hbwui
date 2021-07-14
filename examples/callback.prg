@@ -55,4 +55,4 @@ FUNCTION hbwui_Callback( cStr )
 
    hbwui_RunJs( 'alert( "' + cRet + '" )'  ) //this is javascript code - Case sensitive!!!!
  
-RETURN nil  //this is javascript code
+RETURN nil  
