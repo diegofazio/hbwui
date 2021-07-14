@@ -15,9 +15,9 @@ Get it from Harbour
 
     function hbwui_Callback( cStr )
     
-    ....
+        hbwui_RunJs( 'alert( 'Hello from harbour' )  
 
-    return "alert('hello from harbour')  //and return running Javascript code.
+    return nil  
     
 ## Windows 
 
