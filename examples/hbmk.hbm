@@ -1,5 +1,5 @@
 {msvc64}-L../lib/win64
-{msvc64}-L../lib/win32
+{msvc}-L../lib/win32
 -lhbwui
 -gui
 -gtnul
