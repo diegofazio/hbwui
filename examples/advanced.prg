@@ -16,6 +16,9 @@ FUNCTION Main()
 
    hbwui_SetSize( 1024, 768 )
    hbwui_Navigate( "https://www.hbtron.com" )
-   hbwui_Run()
+
+   while ( hbwui_Run() == 0 )
+
+   enddo
 
 RETURN
