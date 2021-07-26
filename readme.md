@@ -9,15 +9,15 @@ Simple Webview initialization
 
 Advanced Webview initialization
 
-    hbwui_SetTitle( cTitle )
-    hbwui_Create()
-    hbwui_SetSize( nWidth, nHeight )
-    hbwui_SetFullscreen( lFullscreen )
-    hbwui_SetResizable( lResizable )
-    hbwui_SetDebug( lDebug )
-    hbwui_SetMaximized( lMaximized )
-    hbwui_Navigate( cHtml )
-    hbwui_Run()
+    hbwui_SetTitle( cTitle )           // Set Webview windows title - Must be defined before hbwui_create()
+    hbwui_Create()                     // Create Webview
+    hbwui_SetSize( nWidth, nHeight )   // Set Webview windows size
+    hbwui_SetFullscreen( lFullscreen ) // Start Webview in fullscreen mode(F12)
+    hbwui_SetResizable( lResizable )   // Enable resize Webview windows
+    hbwui_SetDebug( lDebug )           // Enable context menu
+    hbwui_SetMaximized( lMaximized )   // Start Webview maximized
+    hbwui_Navigate( cHtml )            // Inyect html or define an Url for the Webview
+    hbwui_Run()                        // Start Webview
 
 ### Harbour <-> Javascript( See example callback.prg )
 
