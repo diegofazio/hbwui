@@ -19,9 +19,10 @@ Get it from Harbour
 
     return nil  
     
-## Windows 
+## Windows( 1 or 2 ) 
 
-Make sure you have the new Microsoft Edge (Chromium) installed.
+1) Make sure you have the LAST Microsoft Edge (Chromium beta, dev, or canary) installed.
+2) Get the runtime directly(https://developer.microsoft.com/en-us/microsoft-edge/webview2/#download-section). Any of them.
 
 ## Linux
 
