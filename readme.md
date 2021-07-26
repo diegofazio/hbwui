@@ -3,11 +3,11 @@
 # Multiplatform Harbour GUI programs made in html/ccs and just a bit of js
 #
 
-Simple Webview initialization
+Simple Webview initialization( examples/basic.prg )
 
     hbwui_Init( cUrl, cTitle, nWidth, nHeight, lFullscreen, lResizable, lMaximized, lDebug )
 
-Advanced Webview initialization
+Advanced Webview initialization( examples/advanced.prg )
 
     hbwui_SetTitle( cTitle )           // Set Webview windows title - Must be defined before hbwui_create()
     hbwui_Create()                     // Create Webview
