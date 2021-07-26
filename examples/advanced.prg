@@ -4,16 +4,7 @@
 ** Developed by Diego Fazio(2021)
 /*
  From a harbour program, it opens a new window showing some url
-
- default values:
- ---------------
- hbwui_SetSize( 800, 600 )
- hbwui_SetFullscreen( .F. )
- hbwui_SetResizable( .T. )
- hbwui_SetDebug( .F. )
- hbwui_SetMaximized( .F. )
-
- */
+*/
 
 FUNCTION Main()
 
