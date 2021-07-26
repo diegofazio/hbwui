@@ -4,6 +4,8 @@ basic.bat
 callback.exe.WebView2
 callback.exe
 callback.bat
+advanced.exe
+advanced.exe.WebView2
 .hbmk2
 gitpull.cmd
 gitpush.cmd
