@@ -3,7 +3,21 @@
 # Multiplatform Harbour GUI programs made in html/ccs and just a bit of js
 #
 
+Simple Webview initialization
+
     hbwui_Init( cUrl, cTitle, nWidth, nHeight, lFullscreen, lResizable, lMaximized, lDebug )
+
+Advanced Webview initialization
+
+    hbwui_SetTitle( cTitle )
+    hbwui_Create()
+    hbwui_SetSize( nWidth, nHeight )
+    hbwui_SetFullscreen( lFullscreen )
+    hbwui_SetResizable( lResizable )
+    hbwui_SetDebug( lDebug )
+    hbwui_SetMaximized( lMaximized )
+    hbwui_Navigate( cHtml )
+    hbwui_Run()
 
 ### Harbour <-> Javascript( See example callback.prg )
 
