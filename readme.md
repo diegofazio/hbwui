@@ -17,6 +17,7 @@
     hbwui_SetDebug( lDebug )           // Enable context menu.
     hbwui_SetMaximized( lMaximized )   // Start Webview maximized.
     hbwui_Navigate( cHtml )            // Inyect html or define an Url for the Webview.
+    hbwui_RunJs( cJscode )             // Run js code
     hbwui_Run()                        // Start Webview.
     hbwui_Exit()                       // Stop Webview execution.
 
