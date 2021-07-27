@@ -23,7 +23,7 @@
 
 ### Harbour <-> Javascript( See example tunnel.prg )
 
-Call from Javascript:
+Call it from Javascript:
 
     add( 1,2 ); 
 
