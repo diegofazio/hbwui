@@ -22,17 +22,19 @@ Advanced Webview initialization( examples/advanced.prg )
 
 ### Harbour <-> Javascript( See example callback.prg )
 
-From Javascript:
+Call from Javascript:
 
-    windows.external.invoke( cStr )
+    add( 1,2 ) 
 
-Get it from Harbour
+Run it from Harbour
 
-    function hbwui_Callback( cStr )
-    
-        hbwui_RunJs( 'alert( 'Hello from harbour' )  
+    hbwui_tunnel( "add", "{| a,b | add( a, b )}" )
 
-    return nil  
+    function add( a, b )
+
+        hbwui_RunJs( 'alert("The result is: ' + str( a + b ) + '")' )
+
+    return     
     
 ## Windows( 1 or 2 ) 
 
