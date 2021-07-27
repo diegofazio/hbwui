@@ -29,7 +29,7 @@ Call it from Javascript:
 
 Run it from Harbour
 
-    hbwui_tunnel( "add", "{| a,b | add( a, b )}" )  //define tunnel before hbwui_create()
+    hbwui_tunnel( "add", "{| a,b | add( a, b )}" )  //define tunnel before hbwui_Create()
 
     function add( a, b )    // define function in your project
 
