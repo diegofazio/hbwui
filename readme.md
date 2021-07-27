@@ -3,11 +3,11 @@
 # Multiplatform Harbour GUI programs made in html/ccs and just a bit of js
 #
 
-Simple Webview initialization( examples/basic.prg )
+### Simple Webview initialization( examples/basic.prg )
 
     hbwui_Init( cUrl, cTitle, nWidth, nHeight, lFullscreen, lResizable, lMaximized, lDebug )
 
-Advanced Webview initialization( examples/advanced.prg )
+### Advanced Webview initialization( examples/advanced.prg )
 
     hbwui_SetTitle( cTitle )           // Set Webview windows title - Must be defined before hbwui_create().
     hbwui_Create()                     // Create Webview.
@@ -20,17 +20,17 @@ Advanced Webview initialization( examples/advanced.prg )
     hbwui_Run()                        // Start Webview.
     hbwui_Exit()                       // Stop Webview execution.
 
-### Harbour <-> Javascript( See example callback.prg )
+### Harbour <-> Javascript( See example tunnel.prg )
 
 Call from Javascript:
 
-    add( 1,2 ) 
+    add( 1,2 ); 
 
 Run it from Harbour
 
-    hbwui_tunnel( "add", "{| a,b | add( a, b )}" )
+    hbwui_tunnel( "add", "{| a,b | add( a, b )}" )  //define tunnel before hbwui_create()
 
-    function add( a, b )
+    function add( a, b )    // define function in your project
 
         hbwui_RunJs( 'alert("The result is: ' + str( a + b ) + '")' )
 
