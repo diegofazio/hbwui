@@ -21,7 +21,7 @@
     hbwui_Run()                        // Start Webview.
     hbwui_Exit()                       // Stop Webview execution.
 
-### Harbour <-> Javascript( See example tunnel.prg )
+### Harbour <-> Javascript( See example examples/tunnel.prg )
 
 Call it from Javascript:
 
