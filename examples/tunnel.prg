@@ -24,8 +24,6 @@ FUNCTION Main()
          <body>
             <div id="app"><h1>Hello HBWUI!!!</h1></div>
             <div><button id="btn1" onclick="add(5,2);">Run Task1</button></div>
-            <script type="text/javascript">
-            </script>
          </body>
       </html>
    ENDTEXT
