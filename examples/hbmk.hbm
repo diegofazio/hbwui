@@ -1,7 +1,10 @@
-{msvc64}-L../lib/win64
-{msvc}-L../lib/win32
 -lhbwui
 -gui
 -gtnul
-..\resource\sample.rc
--icon=..\resource\sample.ico
+{msvc64}-L../lib/win64
+{msvc}-L../lib/win32
+{gcc}-lstdc++
+{gcc}-deppkgname=gtk:gtk+-3.0
+{gcc}-deppkgname=webkit:webkit2gtk-4.0
+{allmsvc}..\resource\sample.rc
+{allmsvc}-icon=..\resource\sample.ico
