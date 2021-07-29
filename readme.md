@@ -42,6 +42,9 @@ Run it from Harbour
 1) Make sure you have the LAST Microsoft Edge (Chromium beta, dev, or canary) installed.
 2) Get the runtime directly(https://developer.microsoft.com/en-us/microsoft-edge/webview2/#download-section). Any of them.
 
+<p align="center"><img alt="linux" src="examples/screenshots/Windows1.png"></p>
+<p align="center"><img alt="linux" src="examples/screenshots/Windows2.png"></p>
+
 ## Linux
 
 Webview depends on `gtk+-3.0` and `webkit2gtk-4.0`:
