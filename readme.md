@@ -3,23 +3,23 @@
 # Multiplatform Harbour GUI programs made in html/ccs and just a bit of js
 #
 
-### Simple Webview initialization( examples/basic.prg )
+### Simple hbWUI initialization( examples/basic.prg )
 
     hbwui_Init( cUrl, cTitle, nWidth, nHeight, lFullscreen, lResizable, lMaximized, lDebug )
 
-### Advanced Webview initialization( examples/advanced.prg )
+### Advanced hbWUI initialization( examples/advanced.prg )
 
-    hbwui_SetTitle( cTitle )           // Set Webview windows title - Must be defined before hbwui_create().
-    hbwui_Create()                     // Create Webview.
-    hbwui_SetSize( nWidth, nHeight )   // Set Webview windows size.
-    hbwui_SetFullscreen( lFullscreen ) // Start Webview in fullscreen mode(F12).
-    hbwui_SetResizable( lResizable )   // Enable resize Webview windows.
+    hbwui_SetTitle( cTitle )           // Set hbWUI windows title - Must be defined before hbwui_create().
+    hbwui_Create()                     // Create hbWUI.
+    hbwui_SetSize( nWidth, nHeight )   // Set hbWUI windows size.
+    hbwui_SetFullscreen( lFullscreen ) // Start hbWUI in fullscreen mode(F12).
+    hbwui_SetResizable( lResizable )   // Enable resize hbWUI windows.
     hbwui_SetDebug( lDebug )           // Enable context menu.
-    hbwui_SetMaximized( lMaximized )   // Start Webview maximized.
-    hbwui_Navigate( cHtml )            // Inyect html or define an Url for the Webview.
+    hbwui_SetMaximized( lMaximized )   // Start hbWUI maximized.
+    hbwui_Navigate( cHtml )            // Inyect html or define an Url for the hbWUI.
     hbwui_RunJs( cJscode )             // Run js code
-    hbwui_Run()                        // Start Webview.
-    hbwui_Exit()                       // Stop Webview execution.
+    hbwui_Run()                        // Start hbWUI.
+    hbwui_Exit()                       // Stop hbWUI execution.
 
 ### Harbour <-> Javascript( See example examples/tunnel.prg )
 
@@ -47,7 +47,7 @@ Run it from Harbour
 
 ## Linux
 
-Webview depends on `gtk+-3.0` and `webkit2gtk-4.0`:
+hbWUI depends on `gtk+-3.0` and `webkit2gtk-4.0`:
 
 ```sh
 sudo apt-get install libgtk-3-dev libwebkit2gtk-4.0-37 libwebkit2gtk-4.0-dev
@@ -57,7 +57,7 @@ sudo apt-get install libgtk-3-dev libwebkit2gtk-4.0-37 libwebkit2gtk-4.0-dev
 
 ## MacOS
 
-Webview depends on the Cocoa and Webkit frameworks.
+hbWUI depends on the Cocoa and Webkit frameworks.
 
 # http://www.hbtron.com
 <img src="http://www.hbtron.com/hwtools512.png" width="250" title="hw_tools">
