@@ -49,6 +49,8 @@ Webview depends on `gtk+-3.0` and `webkit2gtk-4.0`:
 ```sh
 sudo apt-get install libgtk-3-dev libwebkit2gtk-4.0-37 libwebkit2gtk-4.0-dev
 ```
+<p align="center"><img alt="linux" src="examples/screenshots/ubuntu1.png"></p>
+<p align="center"><img alt="linux" src="examples/screenshots/ubuntu2.png"></p>
 
 ## MacOS
 
