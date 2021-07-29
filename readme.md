@@ -1,4 +1,4 @@
-# hbwui WebView2/Cocoa/GTK Harbour Web UI
+# hbWUI WebView2/Cocoa/GTK Harbour Web UI
 #
 # Multiplatform Harbour GUI programs made in html/ccs and just a bit of js
 #
