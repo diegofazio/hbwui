@@ -3,6 +3,7 @@
 -gtnul
 {msvc64}-L../lib/win64
 {msvc}-L../lib/win32
+{gcc}-L../lib/Ubuntu64
 {gcc}-lstdc++
 {gcc}-deppkgname=gtk:gtk+-3.0
 {gcc}-deppkgname=webkit:webkit2gtk-4.0
