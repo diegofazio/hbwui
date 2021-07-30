@@ -23,13 +23,15 @@ FUNCTION Main()
          </head>
          <body>
             <div id="app"><h1>Hello HBWUI!!!</h1></div>
-            <div><button id="btn1" onclick="add(5,2);">Run Task1</button></div>
+            <div>Name:<input type="text" maxlength="512" id="name" value="Text sample"/><button id="btn1" onclick="text(document.getElementById('name').value);">Send data to Harbour</button></div><br>
+            <div><button id="btn2" onclick="add(5,2);">Run Task from Harbour</button></div>
          </body>
       </html>
    ENDTEXT
    
    hbwui_SetTitle( 'HBWUI Tunnel Sample' )
    hbwui_tunnel( "add", "{| a,b | add( a, b )}" )
+   hbwui_tunnel( "text", "{|a| text(a)}" )   
 
    IF ( hbwui_Create() == -1  )
       RETURN
@@ -55,3 +57,10 @@ return
 
 //---------------------------------------------------------------------------
 
+function text( a )
+
+   hbwui_RunJs( 'alert(" Input text value: ' + a + '")' )
+   
+return
+
+//---------------------------------------------------------------------------
