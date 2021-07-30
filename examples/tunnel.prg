@@ -1,5 +1,5 @@
 /*
-**  callback.prg -- hbwui WebView2/Cocoa/GTK Harbour Web UI
+**  tunnel.prg -- hbwui WebView2/Cocoa/GTK Harbour Web UI
 **
 **  Calls a harbour function from html/js 
 **  
