@@ -8,14 +8,14 @@
 
 FUNCTION Main()
 
-   hbwui_SetTitle( 'HBWUI Advanced Sample' )
+   hbwui_SetTitle( 'Amigo+' )
 
    IF ( hbwui_Create() == -1  )
       RETURN
    ENDIF
 
-   hbwui_SetSize( 1024, 768 )
-   hbwui_Navigate( "https://www.hbtron.com" )
+   hbwui_SetSize( 1280, 1024 )
+   hbwui_Navigate( "http://localhost/amigo" )
 
    while ( hbwui_Run() == 0 )
 

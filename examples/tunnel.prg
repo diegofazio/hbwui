@@ -14,7 +14,7 @@ FUNCTION Main()
    local cHtml := ''
 
    TEXT TO cHtml
-      data:text/html,
+      data:text/html,   // mandatory line for inline pages
       <!DOCTYPE html>
       <html lang="en">
          <head>
@@ -29,20 +29,27 @@ FUNCTION Main()
       </html>
    ENDTEXT
    
+   // Main Window Title
    hbwui_SetTitle( 'HBWUI Tunnel Sample' )
+   
+   // Al tunnels MUST be declared BEFORE HTML rendering
    hbwui_tunnel( "add", "{| a,b | add( a, b )}" )
    hbwui_tunnel( "text", "{|a| text(a)}" )   
 
+   // Could it be created ok ?
    IF ( hbwui_Create() == -1  )
       RETURN
    ENDIF
 
+   // Change some Window properties
    hbwui_SetSize( 1024, 768 )
-   hbwui_SetDebug( .T. )          
+   hbwui_SetDebug( .T. )       // Enables the inspector
+         
+   // Launch and render HTML WUI    
    hbwui_Navigate( cHtml )
    
+   // Main loop
    while ( hbwui_Run() == 0 )
-
    enddo
 
 RETURN
