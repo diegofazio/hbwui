@@ -1,5 +1,5 @@
 /*
-**  advance.prg -- hbwui WebView2/Cocoa/GTK Harbour Web UI
+**  advance.prg -- hbWUI WebView2/Cocoa/GTK Harbour Web UI
 **
 ** Developed by Diego Fazio(2021)
 /*
@@ -9,21 +9,21 @@
 FUNCTION Main()
 
    // Window tittle
-   hbwui_SetTitle( 'hbWUI' )
+   hbWUI_SetTitle( 'hbWUI' )
 
    // Could it be created ?
-   IF ( hbwui_Create() == -1  )
+   IF ( hbWUI_Create() == -1  )
       RETURN
    ENDIF
    
    // Window size
-   hbwui_SetSize( 1024, 768 )
+   hbWUI_SetSize( 1024, 768 )
    
    // Load external url
-   hbwui_Navigate( "http://www.hbtron.com" )
+   hbWUI_Navigate( "http://www.hbtron.com" )
 
    // wait till WUI closes
-   while ( hbwui_Run() == 0 )
+   while ( hbWUI_Run() == 0 )
    enddo
 
 RETURN
