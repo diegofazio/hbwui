@@ -8,7 +8,7 @@
 #xcommand TEXT <into:TO,INTO> <v> => #pragma __cstream|<v>:=%s
 
 // Creates html window
-
+ 
 FUNCTION Main()
 
    local cHtml := ''

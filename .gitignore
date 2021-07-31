@@ -3,9 +3,11 @@ basic.exe
 basic.bat
 tunnel.exe.WebView2
 tunnel.exe
-callback.bat
-advanced.exe
+tunnel.bat
 advanced.exe.WebView2
+advanced.exe
+advanced.bat
 .hbmk2
 gitpull.cmd
 gitpush.cmd
+gitclone.cmd
