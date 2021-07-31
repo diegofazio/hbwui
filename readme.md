@@ -17,6 +17,7 @@
     hbwui_SetDebug( lDebug )           // Enable context menu.
     hbwui_SetMaximized( lMaximized )   // Start hbWUI maximized.
     hbwui_Navigate( cHtml )            // Inyect html or define an Url for the hbWUI.
+    hbwui_ApplyCss( cCss )             // Apply css style to hbWUI. Must be pure css code. This func should only be called from a tunnel function.
     hbwui_RunJs( cJscode )             // Run js code
     hbwui_Run()                        // Start hbWUI.
     hbwui_Exit()                       // Stop hbWUI execution.
