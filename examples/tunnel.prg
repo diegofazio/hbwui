@@ -58,6 +58,7 @@ RETURN
 
 function add( a, b )
 
+   // harbour does its thing and then optionally executes a JS script on the WUI
    hbwui_RunJs( 'alert("The result is: ' + str( a + b ) + '")' )
 
 return 
@@ -66,6 +67,7 @@ return
 
 function text( a )
 
+   // ditto
    hbwui_RunJs( 'alert(" Input text value: ' + a + '")' )
    
 return
