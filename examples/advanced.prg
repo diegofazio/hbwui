@@ -8,17 +8,22 @@
 
 FUNCTION Main()
 
-   hbwui_SetTitle( 'Amigo+' )
+   // Window tittle
+   hbwui_SetTitle( 'hbWUI' )
 
+   // Could it be created ?
    IF ( hbwui_Create() == -1  )
       RETURN
    ENDIF
+   
+   // Window size
+   hbwui_SetSize( 1024, 768 )
+   
+   // Load external url
+   hbwui_Navigate( "http://www.hbtron.com" )
 
-   hbwui_SetSize( 1280, 1024 )
-   hbwui_Navigate( "http://localhost/amigo" )
-
+   // wait till WUI closes
    while ( hbwui_Run() == 0 )
-
    enddo
 
 RETURN
