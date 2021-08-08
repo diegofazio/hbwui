@@ -33,6 +33,10 @@ function submit( a )
 
       local hParam := {=>}
       hb_jsonDecode( a, @hParam )
+
+// Here you could validate the mail and password...
+// with hParam['inputEmail'] and hParam['inputPassword']
+
       hbWUI_RunJs( 'alert( "Welcome :' + hParam['inputEmail'] +'" );' )
 
 return
