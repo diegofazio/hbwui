@@ -2,8 +2,6 @@
 **  login.prg -- hbWUI WebView2/Cocoa/GTK Harbour Web UI
 **
 ** Developed by Diego Fazio(2021)
-/*
- From a harbour program, it opens a new window showing some url
 */
 
 FUNCTION Main()
