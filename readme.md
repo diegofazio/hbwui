@@ -37,6 +37,8 @@ Run it from Harbour
         hbWUI_RunJs( 'alert("The result is: ' + str( a + b ) + '")' )
 
     return     
+
+### ErrorBlock -> Error log file hbWUI_error.log
     
 ## Windows( 1 or 2 ) 
 
