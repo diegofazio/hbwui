@@ -5,21 +5,22 @@
 
 ### Simple hbWUI initialization( examples/basic.prg )
 
-    hbwui_Init( cUrl, cTitle, nWidth, nHeight, lFullscreen, lResizable, lMaximized, lDebug )
+    hbWUI_Init( cUrl, cTitle, nWidth, nHeight, lFullscreen, lResizable, lMaximized, lDebug )
 
 ### Advanced hbWUI initialization( examples/advanced.prg )
 
-    hbwui_SetTitle( cTitle )           // Set hbWUI windows title - Must be defined before hbwui_create().
-    hbwui_Create()                     // Create hbWUI.
-    hbwui_SetSize( nWidth, nHeight )   // Set hbWUI windows size.
-    hbwui_SetFullscreen( lFullscreen ) // Start hbWUI in fullscreen mode(F12).
-    hbwui_SetResizable( lResizable )   // Enable resize hbWUI windows.
-    hbwui_SetDebug( lDebug )           // Enable context menu.
-    hbwui_SetMaximized( lMaximized )   // Start hbWUI maximized.
-    hbwui_Navigate( cHtml )            // Inyect html or define an Url for the hbWUI.
-    hbwui_RunJs( cJscode )             // Run js code
-    hbwui_Run()                        // Start hbWUI.
-    hbwui_Exit()                       // Stop hbWUI execution.
+    hbWUI_SetTitle( cTitle )           // Set hbWUI windows title - Must be defined before hbWUI_create().
+    hbWUI_Create()                     // Create hbWUI.
+    hbWUI_SetSize( nWidth, nHeight )   // Set hbWUI windows size.
+    hbWUI_SetFullscreen( lFullscreen ) // Start hbWUI in fullscreen mode(F12).
+    hbWUI_SetResizable( lResizable )   // Enable resize hbWUI windows.
+    hbWUI_SetDebug( lDebug )           // Enable context menu.
+    hbWUI_SetMaximized( lMaximized )   // Start hbWUI maximized.
+    hbWUI_Navigate( cHtml )            // Inyect html or define an Url for the hbWUI.
+    hbWUI_ApplyCss( cCss )             // Apply css style to hbWUI. Must be pure css code. This func should only be called from a tunnel function.
+    hbWUI_RunJs( cJscode )             // Run js code
+    hbWUI_Run()                        // Start hbWUI.
+    hbWUI_Exit()                       // Stop hbWUI execution.
 
 ### Harbour <-> Javascript( See example examples/tunnel.prg )
 
@@ -29,13 +30,15 @@ Call it from Javascript:
 
 Run it from Harbour
 
-    hbwui_tunnel( "add", "{| a,b | add( a, b )}" )  //define tunnel before hbwui_Create()
+    hbWUI_tunnel( "add", "{| a,b | add( a, b )}" )  //define tunnel before hbWUI_Create()
 
     function add( a, b )    // define function in your project
 
-        hbwui_RunJs( 'alert("The result is: ' + str( a + b ) + '")' )
+        hbWUI_RunJs( 'alert("The result is: ' + str( a + b ) + '")' )
 
     return     
+
+### ErrorBlock -> Error log file hbWUI_error.log
     
 ## Windows( 1 or 2 ) 
 
