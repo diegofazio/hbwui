@@ -93,17 +93,8 @@
          </div>
          <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
       </form>
-      <button class="btn btn-lg btn-primary btn-block" onclick="SendData();">Sign in</button>
-      <script>
-
-         function SendData() {
-            var oParam = new Object()
-            oParam['inputEmail'] = document.getElementById("inputEmail").value;
-            oParam['inputPassword'] = document.getElementById("inputPassword").value;
-            submit(JSON.stringify(oParam));
-         }
-
-      </script>
+      <button class="btn btn-lg btn-primary btn-block" onclick="submit();">Sign in</button>
+   </div>
 </body>
 
 </html>
