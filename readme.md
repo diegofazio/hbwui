@@ -7,20 +7,22 @@
 
     hbWUI_Init( cUrl, cTitle, nWidth, nHeight, lFullscreen, lResizable, lMaximized, lDebug )
 
-### Advanced hbWUI initialization( examples/advanced.prg )
+### Advanced hbWUI initialization( examples/  advanced.prg - login.prg - login2.prg )
 
-    hbWUI_SetTitle( cTitle )           // Set hbWUI windows title - Must be defined before hbWUI_create().
-    hbWUI_Create()                     // Create hbWUI.
-    hbWUI_SetSize( nWidth, nHeight )   // Set hbWUI windows size.
-    hbWUI_SetFullscreen( lFullscreen ) // Start hbWUI in fullscreen mode(F12).
-    hbWUI_SetResizable( lResizable )   // Enable resize hbWUI windows.
-    hbWUI_SetDebug( lDebug )           // Enable context menu.
-    hbWUI_SetMaximized( lMaximized )   // Start hbWUI maximized.
-    hbWUI_Navigate( cHtml )            // Inyect html or define an Url for the hbWUI.
-    hbWUI_ApplyCss( cCss )             // Apply css style to hbWUI. Must be pure css code. This func should only be called from a tunnel function.
-    hbWUI_RunJs( cJscode )             // Run js code
-    hbWUI_Run()                        // Start hbWUI.
-    hbWUI_Exit()                       // Stop hbWUI execution.
+    hbWUI_SetTitle( cTitle )                    // Set hbWUI windows title - Must be defined before hbWUI_create().
+    hbWUI_Create()                              // Create hbWUI.
+    hbWUI_SetSize( nWidth, nHeight )            // Set hbWUI windows size.
+    hbWUI_SetFullscreen( lFullscreen )          // Start hbWUI in fullscreen mode(F12).
+    hbWUI_SetResizable( lResizable )            // Enable resize hbWUI windows.
+    hbWUI_SetDebug( lDebug )                    // Enable context menu.
+    hbWUI_SetMaximized( lMaximized )            // Start hbWUI maximized.
+    hbWUI_Navigate( cHtml )                     // Inyect html or define an Url for the hbWUI.
+    hbWUI_ApplyCss( cCss )                      // Apply css style to hbWUI. Must be pure css code. This func should only be called from a tunnel function.
+    hbWUI_RunJs( cJscode )                      // Run js code
+    hbWUI_GetElementById( cId, cKey )           // Get attributes from DOM Elemment specify by Id. NOTE: Only attributes 
+    hbWUI_SetElementById( cId, cKey, xValue )   // Set attribute from DOM Element specify by Id. Ex: value, class, style...etc
+    hbWUI_Run()                                 // Start hbWUI.
+    hbWUI_Exit()                                // Stop hbWUI execution.
 
 ### Harbour <-> Javascript( See example examples/tunnel.prg )
 
