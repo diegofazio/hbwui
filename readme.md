@@ -20,7 +20,7 @@
     hbWUI_ApplyCss( cCss )                      // Apply css style to hbWUI. Must be pure css code. This func should only be called from a tunnel function.
     hbWUI_RunJs( cJscode )                      // Run js code
     hbWUI_GetElementById( cId, cKey )           // Get attributes from DOM Elemment specify by Id. NOTE: Only attributes 
-    hbWUI_SetElementById( cId, cKey, xValue )   // Set attribute from DOM Element specify by Id. Ex: value, class, style...etc
+    hbWUI_SetElementById( cId, cKey, xValue )   // Set ANY parameter to DOM Element specify by Id. Ex: value, class, style...etc
     hbWUI_Run()                                 // Start hbWUI.
     hbWUI_Exit()                                // Stop hbWUI execution.
 
