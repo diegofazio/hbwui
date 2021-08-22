@@ -23,7 +23,7 @@ FUNCTION Main()
    hbWUI_SetSize( 1024, 768 )
    
    // Load external url
-   hbWUI_Navigate( "file:///"+ hb_DirBase() + "/test.html" )
+   hbWUI_Navigate( "file:///"+ hb_DirBase() + "/changeclass.html" )
    hbWUI_SetDebug( .T. )          
 
    // wait till WUI closes
