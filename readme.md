@@ -42,7 +42,7 @@ Run it from Harbour
 
 ### ErrorBlock -> Error log file hbWUI_error.log
     
-## Windows( 1 or 2 ) 
+## Windows( Dependency op: 1/2 ) 
 
 1) Make sure you have the LAST Microsoft Edge (Chromium beta, dev, or canary) installed.
 2) Get the runtime directly(https://developer.microsoft.com/en-us/microsoft-edge/webview2/#download-section). Any of them.
