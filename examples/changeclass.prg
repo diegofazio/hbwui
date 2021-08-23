@@ -5,14 +5,13 @@
 /*
  From a harbour program, change DOM element class
 */
-#include "hbthread.ch"
 
 FUNCTION Main()
 
    // Window tittle
    hbWUI_SetTitle( 'hbWUI callback' )
 
-   hbWUI_tunnel( "changeclass", "{|| changeclass()}" )
+   hbWUI_tunnel( "changeclass", "{|| changeclass()}" )  // define the tunnel
 
    // Could it be created ?
    IF ( hbWUI_Create() == -1  )
@@ -34,9 +33,11 @@ RETURN
  
 function changeclass()
 
-   cClass := hbWUI_GetElementById('title','class')
-   hbWUI_SetElementById( 'title', 'className', hb_StrReplace(cClass, "background", "" ) )
-
+   // WARNING: despite in html the property is called "class" internally the DOM has it as "classname"
+   cClass := hbWUI_GetElementById('title','class') // Read class property of the title element 
+   hbWUI_SetElementById( 'title', 'className', hb_StrReplace(cClass, "background", "" ) ) // Change it
+   // It takes inmediate effect on the page
+   
 return
 
 
