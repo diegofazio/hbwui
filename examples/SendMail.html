@@ -18,7 +18,6 @@
    <style>
       body {
          padding-top: 10px;
-         display: flex;
          flex-direction: column;
          align-items: center;
          justify-content: space-between;
@@ -72,31 +71,28 @@
          cursor: pointer;
          opacity: 0
       }
-
    </style>
 
 </head>
 
 <body>
    <div class="container-fuid">
-      <div class="row">
-         <div class="col-md-12">
-            <h3>Envio de mail</h3>
-            <label for="inputTo">Direccion de mail</label>
-            <input type="email" id="inputTo" class="form-control" required autofocus>
-            <label for="inputSubject">Asunto</label>
-            <input type="text" id="inputSubject" class="form-control" required>
-            <label for="inputBody">Cuerpo</label>
-            <textarea class="form-control" id="inputBody" rows="10"></textarea>
-            <div class="file-drop-area"> <span class="choose-file-button">Seleccione Archivos</span> <span
-                  class="file-message">Arrastre y Suelte sus archivos aqui</span> <input name="upload[]" id="file"
-                  class="file-input" type="file" multiple="multiple">
-            </div>
-            <div>
-               <button class="btn-block btn-primary " onclick="readFiles();">Enviar</button>
-            </div>
-
+      <div class="col-md-12">
+         <h3>Envio de mail</h3>
+         <label for="inputTo">Direccion de mail</label>
+         <input type="email" id="inputTo" class="form-control" required autofocus>
+         <label for="inputSubject">Asunto</label>
+         <input type="text" id="inputSubject" class="form-control" required>
+         <label for="inputBody">Cuerpo</label>
+         <textarea class="form-control" id="inputBody" rows="10"></textarea>
+         <div class="file-drop-area"> <span class="choose-file-button">Seleccione Archivos</span> <span
+               class="file-message">Arrastre y Suelte sus archivos aqui</span> <input name="upload[]" id="file"
+               class="file-input" type="file" multiple="multiple">
          </div>
+         <div>
+            <button class="btn-block btn-primary " onclick="readFiles();">Enviar</button>
+         </div>
+
       </div>
    </div>
 
