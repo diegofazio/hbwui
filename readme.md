@@ -49,6 +49,7 @@ Run it from Harbour
 
 <p align="center"><img alt="linux" src="examples/screenshots/Windows1.png"></p>
 <p align="center"><img alt="linux" src="examples/screenshots/Windows2.png"></p>
+<p align="center"><img alt="linux" src="examples/screenshots/SendMail.png"></p>
 
 **In Windows, Webview2 creates a USERDATAFOLDER. By default hbWUI save it in %APPDATA%\project.exe\
 All yours .html/.css/.jpg, etc will be cached in this folder, like a browser. Please keep this in mind( content="no-cache" ).**
