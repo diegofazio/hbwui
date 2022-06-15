@@ -1,9 +1,7 @@
 /*
 **  advance.prg -- hbWUI WebView2/Cocoa/GTK Harbour Web UI
-**
+**  From a harbour program, it opens a new window showing some url
 ** Developed by Diego Fazio(2021)
-/*
- From a harbour program, it opens a new window showing some url
 */
 
 FUNCTION Main()
