@@ -70,7 +70,7 @@ FUNCTION SendMail( ASUNTO, DESTINO, MSG, ADJUNTO, MAILCFG )
       oCDOConf:Fields( "http://schemas.microsoft.com/cdo/configuration/smtpconnectiontimeout" ):Value := 30
       oCDOConf:Fields( "http://schemas.microsoft.com/cdo/configuration/sendusername" ):Value := MAILCFG['MAIL_USUARIO']
       oCDOConf:Fields( "http://schemas.microsoft.com/cdo/configuration/sendpassword" ):Value := MAILCFG['MAIL_CLAVE']
-      oCDOConf:Fields( "http://schemas.microsoft.com/cdo/configuration/smtpusessl" ):Value := .F.
+      oCDOConf:Fields( "http://schemas.microsoft.com/cdo/configuration/smtpusessl" ):Value := MAILCFG['MAIL_SSL']
       oCDOConf:Fields( "http://schemas.microsoft.com/cdo/configuration/smtpauthenticate" ):Value := 1
       oCDOConf:Fields:Update()
       oCDOMsg:Configuration := oCDOConf
