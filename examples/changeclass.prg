@@ -2,7 +2,7 @@
 **  changeclass.prg -- hbWUI WebView2/Cocoa/GTK Harbour Web UI
 ** From a harbour program, change DOM element class
 ** Developed by Diego Fazio(2021)
-/*
+*/
 
 FUNCTION Main()
 
