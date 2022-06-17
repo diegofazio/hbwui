@@ -21,6 +21,7 @@
     hbWUI_RunJs( cJscode )                      // Run js code
     hbWUI_GetElementById( cId, cKey )           // Get attributes from DOM Elemment specify by Id. If not exist cKey return "undefined". NOTE: Only attributes. 
     hbWUI_SetElementById( cId, cKey, xValue )   // Set ANY parameter to DOM Element specify by Id. Ex: value, class, style...etc. NOTE: Case sensitive!
+    hbWUI_Webview2Version()                     // Return Webview2 version. Empty if not installed runtime. Ex "102.10.10.11"
     hbWUI_Run()                                 // Start hbWUI.
     hbWUI_Exit()                                // Stop hbWUI execution.
 
