@@ -72,4 +72,4 @@ sudo apt-get install libgtk-3-dev libwebkit2gtk-4.0-37 libwebkit2gtk-4.0-dev
 hbWUI depends on the Cocoa and Webkit frameworks.
 
 # [HW_TOOLS](https://github.com/diegofazio)
-<img src="examples/screenshots/hw_tools.png" width="250" title="hw_tools">
+<img src="examples/screenshots/hw_tools_transparent.png" width="250" title="hw_tools">
