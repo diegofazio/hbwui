@@ -3,7 +3,6 @@
 **  Simple ajax emulation, with returning data directly from harbour
 **  Developed by Diego Fazio(2021)
 */
-
 REQUEST DBFCDX
 FUNCTION Main()
 
@@ -35,7 +34,7 @@ RETURN
 // When page is loaded, calls this function to fill select options
 function fillSelect()
    
-   LOCAL aRows := {}, cAlias
+   LOCAL aRows := {}
    
    dbUseArea( .F., "DBFCDX", './data/test.dbf',, .T. )
    dbSetOrder(1)
@@ -46,6 +45,9 @@ function fillSelect()
 
       cOpt := AllTrim((cAlias)->last) + ", " + AllTrim((cAlias)->first)
       hbWUI_RunJs( "document.getElementById('select1').add( new Option('",cOpt,"','",cOpt,"') )" )
+//    Other way .....cOpt have to be public variable, not local 
+//    hbWUI_RunJs( "document.getElementById('select1').add( new Option('{{cOpt)}}','{{cOpt}}') )" )
+      
       (cAlias)->( DbSkip() )
 
    END
