@@ -30,17 +30,24 @@
 
 Call it from Javascript:
 
-    add( 1,2 ); 
+    add( 1,2 );                          //without return value
+    const retValue = await add2( 1,2 );  //with return value. Note: Must be an await call inside async func. See examples/tunnel.prg
 
-Run it from Harbour
+Define and Run it from Harbour
 
-    hbWUI_tunnel( "add", "{| a,b | add( a, b )}" )  //define tunnel before hbWUI_Create()
+    hbWUI_tunnel( "add", "{| a,b | add( a, b )}" )   //define tunnel before hbWUI_Create()
+    hbWUI_tunnel( "add2", "{| a,b | add2( a, b )}" )  //define tunnel before hbWUI_Create()
 
     function add( a, b )    // define function in your project
 
         hbWUI_RunJs( 'alert("The result is: ' + str( a + b ) + '")' )
 
     return     
+
+    function add2( a, b )    // define function in your project
+
+    return a+b
+
 
 ### ErrorBlock -> Error log file hbWUI_error.log
     
