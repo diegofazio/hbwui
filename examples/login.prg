@@ -1,7 +1,6 @@
 /*
 **  login.prg -- hbWUI WebView2/Cocoa/GTK Harbour Web UI
-**
-** Developed by Diego Fazio(2021)
+**  Developed by Diego Fazio(2021)
 */
 
 FUNCTION Main()

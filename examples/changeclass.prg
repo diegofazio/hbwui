@@ -1,12 +1,12 @@
 /*
 **  changeclass.prg -- hbWUI WebView2/Cocoa/GTK Harbour Web UI
-** From a harbour program, change DOM element class
-** Developed by Diego Fazio(2021)
+**  From a harbour program, change DOM element class
+**  Developed by Diego Fazio(2021)
 */
 
 FUNCTION Main()
 
-   // Window tittle
+   // Window title
    hbWUI_SetTitle( 'hbWUI callback' )
 
    hbWUI_tunnel( "changeclass", "{|| changeclass()}" )  // define the tunnel

@@ -1,7 +1,7 @@
 /*
 **  upload.prg -- hbWUI WebView2/Cocoa/GTK Harbour Web UI
 **  Compile with hbwin.hbc and set mail server parameters -> SendMail.json
-** Developed by Diego Fazio(2022)
+**  Developed by Diego Fazio(2022)
 */
 
 FUNCTION Main()
