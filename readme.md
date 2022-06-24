@@ -24,6 +24,7 @@
     hbWUI_Webview2Version()                     // Return Webview2 version. Empty if not installed runtime. Ex "102.10.10.11"
     hbWUI_Run()                                 // Start hbWUI.
     hbWUI_Exit()                                // Stop hbWUI execution.
+    hbWUI_Init( cUrl, cTitle, nWidth, nHeight, lFullscreen, lResizable, lMaximized, lDebug )
 
 ### Harbour <-> Javascript( See example examples/tunnel.prg )
 
