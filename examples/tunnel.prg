@@ -1,6 +1,6 @@
 /*
 **  tunnel.prg -- hbWUI WebView2/Cocoa/GTK Harbour Web UI
-**  Calls a harbour function from html/js 
+**  Call a harbour function from html/js. With/Without return value
 **  Developed by Diego Fazio(2021)
 */
 
