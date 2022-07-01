@@ -1,8 +1,6 @@
 /*
 **  callback.prg -- hbwui WebView2/Cocoa/GTK Harbour Web UI
-**
 **  Run harbour tunnel function with callback value from js 
-**  
 **  Developed by Diego Fazio(2021)
 */
 
