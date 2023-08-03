@@ -11,7 +11,7 @@
 FUNCTION Main()
 
    local cHtml := ''
-
+// Js code to create button when web is loaded.
    TEXT TO cHtml
      document.addEventListener("DOMContentLoaded", function() {
        var divContainer = document.createElement("div");
@@ -47,7 +47,7 @@ FUNCTION Main()
          getScrape(textareas[0].value);
        });
      });
-  ENDTEXT
+   ENDTEXT
 
    hbwui_SetTitle( 'Scraping Sample' )
    hbWUI_tunnel( "getScrape", "{| cInput | getScrape( cInput )}" )
@@ -61,11 +61,9 @@ FUNCTION Main()
    hbWUI_preEval(cHtml)
    hbwui_Navigate( "https://www.google.com" )
    while ( hbwui_Run() == 0 )
-
    enddo
 
 RETURN
-
 //---------------------------------------------------------------------------
 
 function getScrape( cInput )
@@ -73,4 +71,3 @@ function getScrape( cInput )
    hbWUI_RunJS( "alert('" + cInput + "')" )   
    
 return 
-
