@@ -1,5 +1,5 @@
 /*
-**  scraping.prg -- hbwui WebView2/Cocoa/GTK Harbour Web UI
+**  scraping2.prg -- hbwui WebView2/Cocoa/GTK Harbour Web UI
 **
 **  Load an url and scrape content 
 **  
@@ -11,7 +11,8 @@
 FUNCTION Main()
 
    local cHtml := ''
-// Js code to create button when web is loaded.
+   public nOrd := 1
+   
    TEXT TO cHtml
      document.addEventListener("DOMContentLoaded", function() {
        var divContainer = document.createElement("div");
@@ -25,8 +26,7 @@ FUNCTION Main()
 
        var button = document.createElement("button");
 
-       // Establecer atributos y contenido del botón
-       button.innerHTML = "Write text in google input and Click";
+       button.innerHTML = "Click me to fill Form!!";
        button.id = "my-button";
 
        button.style.backgroundColor = "#ff4081"; 
@@ -43,31 +43,34 @@ FUNCTION Main()
        document.body.appendChild(divContainer);
 
        button.addEventListener("click", function() {
-         const textareas = document.getElementsByTagName("textarea");
-         getScrape(textareas[0].value);
+         fillForm();
        });
      });
-   ENDTEXT
+  ENDTEXT
 
-   hbwui_SetTitle( 'Scraping Sample' )
-   hbWUI_tunnel( "getScrape", "{| cInput | getScrape( cInput )}" )
+   hbwui_SetTitle( 'Scraping Sample2' )
+   hbWUI_SetMaximized( .T. )
+   hbWUI_tunnel( "fillForm", "{|| fillForm()}" )
    
    IF ( hbwui_Create() == -1  )
       RETURN
    ENDIF
 
-   hbwui_SetSize( 1024, 768 )
-   hbwui_SetDebug( .T. )          
    hbWUI_PreEval(cHtml)
-   hbwui_Navigate( "https://www.google.com" )
+   hbwui_Navigate( "https://www.w3schools.com/html/html_forms.asp" )
    while ( hbwui_Run() == 0 )
+
    enddo
 
 RETURN
+
 //---------------------------------------------------------------------------
 
-function getScrape( cInput )
+function fillForm()
 
-   hbWUI_RunJS( "alert('" + cInput + "')" )   
+   hbWUI_SetElementById( 'fname', 'value', 'My name' + LTrim( Str( nOrd ) ) )
+   hbWUI_SetElementById( 'lname', 'value', 'My lastname' + LTrim( Str( nOrd ) ) )
+   nOrd ++
    
 return 
+

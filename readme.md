@@ -19,9 +19,9 @@
     hbWUI_Navigate( cHtml )                     // Inyect html or define an Url for the hbWUI.
     hbWUI_ApplyCss( cCss )                      // Apply css style to hbWUI. Must be pure css code. This func should only be called from a tunnel function.
     hbWUI_RunJs( ..., [<@func>] )               // Run js code. Params(...) concat one each other( xPar1 + xPar2 + ... + xParN ). [<@func>] is a callback func which get the result of js code execution. The js string support {{}} prepro. See examples/testajax.prg and examples/callback.prg
-    hbWUI_preEval( cJsCode )                    // Run js code before loading page. Usefull for scraping webs. See examples/scraping.prg 
-    hbWUI_GetElementById( cId, cKey )           // Get attributes from DOM Elemment specify by Id. If not exist cKey return "undefined". NOTE: Only attributes. 
-    hbWUI_SetElementById( cId, cKey, xValue )   // Set ANY parameter to DOM Element specify by Id. Ex: value, class, style...etc. NOTE: Case sensitive!
+    hbWUI_PreEval( cJsCode )                    // Run js code before loading page. Usefull for scraping webs. See examples/scraping.prg 
+    hbWUI_GetElementById( cId, cAttr )          // Get attributes from DOM Elemment specify by Id. Ex: 'value' for an Input elemment. If not exist cAttr return "undefined". NOTE: Only attributes. 
+    hbWUI_SetElementById( cId, cAttr, xValue )  // Set ANY parameter to DOM Element specify by Id. cAttr ex: value, class, style...etc. NOTE: Case sensitive!
     hbWUI_Webview2Version()                     // Return Webview2 version. Empty if not installed runtime. Ex "102.10.10.11"
     hbWUI_Run()                                 // Start hbWUI.
     hbWUI_Exit()                                // Stop hbWUI execution.
