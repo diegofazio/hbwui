@@ -6,6 +6,6 @@
 
 FUNCTION Main()
 
-   hbWUI_Init( "https://www.hbtron.com", "hbWUI Basic Sample", 800, 600 )
+   hbWUI_Init( "https://www.google.com", "hbWUI Basic Sample", 800, 600 )
 
 RETURN NIL
